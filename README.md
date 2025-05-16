@@ -1,26 +1,32 @@
-# CTESM_Paper_Codes
-This repository contains the codes for CTESM Article
+# PD_CTESM: EEG-Based Parkinson's Disease Classification
 
-# PD_CTESM: Codebase for Research Article on Parkinson's Disease Classification
-
-This repository contains the cleaned and modularized Python code used in the research study titled **[Insert Your Article Title Here]**, focusing on EEG-based Parkinson’s Disease classification using deep learning.
+This repository contains the Python implementation of the methodology used in the research article focused on **Parkinson's Disease (PD) classification using EEG signals** and a deep learning-based architecture called **CTESM (Convolutional Temporal Encoding and Spatial Modeling)**.
 
 ## Repository Structure
 
-The Jupyter notebook has been segmented into 6 functional Python chunks for modularity and ease of reuse:
+The original Jupyter notebook has been modularized into the following standalone Python scripts for better readability and reproducibility:
 
-- `chunk_1.py`: Data loading and preprocessing
-- `chunk_2.py`: Feature extraction pipeline
-- `chunk_3.py`: Model architecture definition
-- `chunk_4.py`: Training loop and callbacks
-- `chunk_5.py`: Evaluation and metrics
-- `chunk_6.py`: Visualization and result saving
+- **1_data_loading_and_preprocessing.py**  
+  Loads EEG datasets, performs preprocessing including normalization and artifact handling.
 
-> **Note**: All inline comments and Markdown explanations have been removed for clean integration.
+- **2_feature_extraction.py**  
+  Extracts temporal and spectral features from the EEG signals for downstream modeling.
 
-## How to Use
+- **3_model_architecture.py**  
+  Defines the CTESM deep learning architecture, integrating convolutional layers with temporal and spatial encoding modules.
 
-1. Clone the repository:
+- **4_training_loop_and_callbacks.py**  
+  Implements the model training logic, loss functions, and callback mechanisms like early stopping and checkpointing.
+
+- **5_evaluation_and_metrics.py**  
+  Evaluates the trained model using accuracy, F1-score, confusion matrix, and other classification metrics.
+
+- **6_visualization_and_results.py**  
+  Visualizes training history, plots EEG signal patterns, and generates result summaries for interpretation.
+
+## Getting Started
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/PD_CTESM.git
    cd PD_CTESM
