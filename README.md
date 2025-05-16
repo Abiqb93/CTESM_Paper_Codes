@@ -1,6 +1,6 @@
 # PD_CTESM: EEG-Based Parkinson's Disease Classification
 
-This repository contains the Python implementation of the methodology used in the research article focused on **Parkinson's Disease (PD) classification using EEG signals** and a deep learning-based architecture called **CTESM (Convolutional Temporal Encoding and Spatial Modeling)**.
+This repository contains the Python implementation of the methodology used in the research article focused on **Parkinson's Disease (PD) classification using EEG signals** and a deep learning-based architecture called **CTESM**.
 
 ## Repository Structure
 
